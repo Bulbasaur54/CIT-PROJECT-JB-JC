@@ -1,4 +1,4 @@
-﻿@charset "utf-8";
+@charset "UTF-8";
 
 /*
     Authors: John Beil and Jason Clark
@@ -10,16 +10,18 @@
 
 /* page body styles */
 html {
-    background-image: url(VG_Background1.png);
+    background-image: url(background_all.png);
     height: 100%;
     font-family: Verdana, Geneva, sans-serif;
     font-size : 12px;
 }
-
+/* body header styles */
 body {
-    width: 100%;
-    max-width: 1024px;
-    margin: 0px auto;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;   /* sets the min to 640px and a max of 960px which will give the screen the abiility to adjust. */
+	min-width: 640px;
+	width: 95%;         /* sets to 95% of the browser window. */
 }
 
 body > header > img {
@@ -27,28 +29,40 @@ body > header > img {
     width: 100%;
 }
 
-
+body > header > nav.horizontalNavigation li {
+	width: 20%;  /* sets width of navigation list item to 20% */
+}
 /*navigation list styles*/
 
 nav.horizontal li { /* makes list item float with a block display on left hand side */
     display: block;
-    padding: 10px;
+    padding-left: 60px;
     float: left;
-    color: white;
 }
 
+nav.horizontal a {
+   background-color:rgb(255, 255, 255);
+   text-align: center;
+}
 
+nav.horizontal a:link, nav.horizontal a:visited {
+   color: black;
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+   background-color: rgb(79, 26, 131);
+}
 
 /*Desktop style*/
 @media only screen and (min-width: 769px) {
-a#navicon
-{
-  display: none;
-}
+    #navicon
+    {
+      display: none;
+    }
 }
 /*Mobile style */
 @media only screen and (max-width: 480px) {
-    a#navicon {
+    #navicon {
         display: block;
     }
 
@@ -56,13 +70,14 @@ a#navicon
         display: none;            /* hides contents of nav list when nav icon is dipslayed*/
     }
 
-    a#navicon:hover+ul, nav.horizontal ul:hover {    /* says that when nav icon is clicked since on mobile device it will open nav list but says hover because if on desktop hover would open it*/
+    #navicon:hover+ul, nav.horizontal ul:hover {    /* says that when nav icon is clicked since on mobile device it will open nav list but says hover because if on desktop hover would open it*/
         display: block;
     }
         nav.horizontal ul li {
             display: block; /* sets submenus to be hidden until below enables it to function by being hovered over */
         }
 
-    a.navigationMenus:hover + ul li { /*selects the ul submenu which preceeds the submenu title ul to be visiable when hovered over also sets them to be displayed as block type*/
+    .navigationMenus:hover + ul li { /*selects the ul submenu which preceeds the submenu title ul to be visiable when hovered over also sets them to be displayed as block type*/
         display: block;
     }
+}
