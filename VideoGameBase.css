@@ -18,10 +18,12 @@ html {
     color: rgb(120, 182, 35);
 }
 body > header > h1 {
+  text-align: center;
   font-size: 26px;
 }
 body > header > p {
   font-size: 14px;
+  text-align: left;
 }
 /* body header styles */
 body {

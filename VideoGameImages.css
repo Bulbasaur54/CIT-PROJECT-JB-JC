@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* css sheet for images*/
+
+/*Photo placement*/
+div#HomeImage1 {
+ position: absolute;
+ display: block;
+ top: 238px;
+ left: 11%;
+}
