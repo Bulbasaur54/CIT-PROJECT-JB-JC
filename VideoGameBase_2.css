@@ -9,7 +9,7 @@ article, aside, blockquote, body, em, footer, header, html, img, li, nav, ol, p,
     font-size: 100%;
     margin: 0;
     padding: 0;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 h1, h2, h3, h4, h5 {
 	font-size: 100%;

@@ -3,7 +3,7 @@
 /* css sheet for images*/
 
 /*Photo placement home page*/
-div#HomeImage1 {
+div#HomeImage1 {         /* plan on changing divs to section id's and modify placement that way eventually */
     display: block;
 	left: 100px;
 	top: 100px;
@@ -20,4 +20,19 @@ div#HomeImage2 {
 	left: 600px;
 	top: 100px;
     width: 25%;
+}
+#arcade {
+  position: absolute;
+  display: block;
+  left: 400px;
+  top: 100px;
+  width: 15%;
+
+}
+#nes {
+  position: absolute;
+  display: block;
+  left: 400px;
+  top: 100px;
+  width: 15%;
 }
