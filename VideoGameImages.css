@@ -2,7 +2,7 @@
 
 /* css sheet for images*/
 
-/*Photo placement*/
+/*Photo placement home page*/
 div#HomeImage1 {
   display: block;
 	left: 100px;
@@ -12,4 +12,11 @@ div#HomeImage2 {
   display: block;
 	left: 300px;
 	top: 200px;
+}
+/*photo placement future page*/
+#GamingPC {
+  position: absolute;
+  display: block;
+	left: 300px;
+	top: 100px;
 }
