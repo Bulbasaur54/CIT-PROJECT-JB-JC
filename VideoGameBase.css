@@ -95,7 +95,7 @@ nav.horizontal a:hover, nav.horizontal a:active {
         display: block;
     }
 }
-/* div id placements for non pictures(home page) */
+/*id placements for home page */
 div#Homeh1 {
   background-color:rgb(120, 61, 0);
   display: block;
@@ -132,9 +132,48 @@ div#Homep2 {
   top: 680px;
   left: 150px;
 }
+#HomeSection3p {
+  background-color:rgb(120, 61, 0);
+  display: block;
+  position: absolute;
+  top: 280px;
+  left: 450px;
+}
+#HomeSection3h {
+  background-color:rgb(120, 61, 0);
+  display: block;
+  position: absolute;
+  top: 180px;
+  left: 450px;
+}
+
+/*placements for history page */
+#Historyh1 {
+  padding: 10px;
+  background-color:rgb(120, 61, 0);
+  position: absolute;
+  display: block;
+  left: 300px;
+  top: 300px;
+}
+
+#HistoryList {
+  padding: 20px;
+  padding-left: 40px;
+  background-color: rgb(120, 61, 0);
+  position: absolute;
+  display: block;
+  left: 300px;
+  top: 300px;
+}
+/*placements for cost of gaming page */
+
+
+
+
+
 /*placements for Future of Gaming page */
-#FutureGaming
-{
+#FutureGaming {/* first section id placement */
   position: absolute;
   display: block;
   left: 300px;
