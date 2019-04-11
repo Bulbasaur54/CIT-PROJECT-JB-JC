@@ -1,18 +1,19 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 
 /* Styles */
 article, aside, footer, header, nav, section{
 	display: block;
 }
-
- article, aside, blockquote, body, em, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, nav, ol, p, section, span, ul {
-
-	font-size: 100%;
-	margin: 0;
-	padding: 0;
-	vertical-align: baseline;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+article, aside, blockquote, body, em, footer, h1, h2, h3, h4, h5, h6, header, html, img, li, nav, ol, p, section, span, ul {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+h1, h2, h3, h4, h5 {
+	font-size: 26px;
+}
+p {
+	font-size: 16px;
 }

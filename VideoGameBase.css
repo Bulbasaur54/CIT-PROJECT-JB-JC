@@ -106,7 +106,7 @@ div#Homeh1 {
   position: absolute;
   top: 200px;
   left: 450px;
-  font-size: 26px;
+
 }
 div#Homeh2 {
   background-color:rgb(120, 61, 0);
@@ -114,7 +114,6 @@ div#Homeh2 {
   position: absolute;
   top: 250px;
   left: 150px;
-  font-size: 26px;
 }
 div#HomeP1 {
   background-color:rgb(120, 61, 0);
@@ -122,7 +121,6 @@ div#HomeP1 {
   position: absolute;
   top: 480px;
   left: 150px;
-  font-size: 16px;
 }
 div#Homeh3 {
   background-color:rgb(120, 61, 0);
@@ -137,6 +135,5 @@ div#Homep2 {
   position: absolute;
   top: 680px;
   left: 150px;
-  font-size: 16px;
 }
 /*placements for cost page */
