@@ -29,6 +29,7 @@ body > header > p {
 }
 /* body header styles */
   body {
+  padding-bottom: 600px;
   background-color: rgb(213, 230, 246);
 	margin-left: auto;
 	margin-right: auto;
@@ -36,7 +37,10 @@ body > header > p {
 	min-width: 640px;
 	width: 95%;         /* sets to 95% of the browser window. */
 }
-
+h1, h2, h3, h4, h5 {
+    text-align: center;
+    font-size: 26px;
+}
 body > header > img {
     display: block;
     width: 100%;
@@ -53,7 +57,7 @@ nav.horizontal li { /* makes list item float with a block display on left hand s
 }
 
 nav.horizontal a {
-  display: block;
+   display: block;
    font-size: 2.0em;
    background-color:rgb(120, 61, 0);
    text-align: center;
@@ -95,7 +99,7 @@ nav.horizontal a:hover, nav.horizontal a:active {
         display: block;
     }
 }
-/* div id placements for non pictures */
+/* div id placements for non pictures(home page) */
 div#Homeh1 {
   background-color:rgb(120, 61, 0);
   display: block;
@@ -118,4 +122,21 @@ div#HomeP1 {
   position: absolute;
   top: 480px;
   left: 150px;
+  font-size: 16px;
 }
+div#Homeh3 {
+  background-color:rgb(120, 61, 0);
+  display: block;
+  position: absolute;
+  top: 580px;
+  left: 150px;
+}
+div#Homep2 {
+  background-color:rgb(120, 61, 0);
+  display: block;
+  position: absolute;
+  top: 680px;
+  left: 150px;
+  font-size: 16px;
+}
+/*placements for cost page */

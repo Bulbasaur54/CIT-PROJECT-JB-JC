@@ -3,14 +3,13 @@
 /* css sheet for images*/
 
 /*Photo placement*/
-figure img {
-	display: block;
-	width: 100%;
-}
-figure#HomeImage1 {
+div#HomeImage1 {
   display: block;
-  margin: 10px 20px;
-  padding-top: 150px;
-	padding-bottom: 200px;
-	width: 40%;
+	left: 100px;
+	top: 100px;
+}
+div#HomeImage2 {
+  display: block;
+	left: 300px;
+	top: 200px;
 }
