@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/*Mobile style */
+@media only screen and (max-width: 480px) {
+    #navicon {
+        width: 10px;
+        display: block;
+    }
+
+    nav.horizontal ul {           /* displays nav icon as block type only on mobile devices and only appears on mobile devices as well */
+        display: none;          /* hides contents of nav list when nav icon is dipslayed*/
+    }
+
+    #navicon:hover+ul, nav.horizontal ul:hover {
+        display: block;
+    }
+        nav.horizontal ul li {
+            display: block;/* sets submenus to be hidden until below enables it to function by being hovered over */
+        }
+    nav.horizontal:hover + ul li {
+        display: block;
+    }
+    /* mobile body styles */
+    body {
+    background-color: rgb(213, 230, 246);
+    max-width: 480px;
+    width: 95%;         /* sets to 95% of the browser window. */
+  }
+  html {
+      background-color: rgb(213, 230, 246);
+      height: 90%;
+      font-family: Verdana, Geneva, sans-serif;
+      font-size : 0.5em;
+      color: white;
+  }
+  /* body header styles */
+
+  body > header > img {
+      display: block;
+      width: 110%;
+  }
+  body > header > nav.horizontal li {
+  	width: 25%;   /* sets width of navigation list item to 20% */
+  }
+  /*navigation list styles*/
+
+  nav.horizontal li { /* makes list item float with a block display on left hand side */
+      display: block;
+      float: left;
+      text-align: center;
+  }
+
+  nav.horizontal a {
+     display: block;
+     font-size: 1em;
+     background-color:rgb(120, 61, 0);
+     text-align: center;
+     text-decoration: none;
+     padding-right: 30px;
+     padding-top: 10px;
+     padding-bottom: 15px;
+     border: 1px solid black;
+     width: 100%;
+  }
+
+  nav.horizontal a:link, nav.horizontal a:visited {
+     color: white; /* text color*/
+  }
+
+  nav.horizontal a:hover, nav.horizontal a:active {
+     background-color: rgb(110, 175, 0);  /* color shown when hovered over */
+  }
+  }
