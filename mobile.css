@@ -23,11 +23,11 @@
     /* mobile body styles */
     body {
     background-color: rgb(213, 230, 246);
-    width: 200%;         /* sets to 95% of the browser window. */
+    width: 90%;         /* sets to 95% of the browser window. */
   }
   html {
       background-color: rgb(213, 230, 246);
-      height: 90%;
+      height: 80%;
       font-family: Verdana, Geneva, sans-serif;
       font-size : 0.5em;
       color: white;
@@ -36,20 +36,20 @@
 
   body > header > img {
       display: block;
-      width: 110%;
+      width: 635px;
   }
-  body > header > nav.horizontal li {
+  body > header > .nav li {
   	width: 15%;   /* sets width of navigation list item to 20% */
   }
   /*navigation list styles*/
 
-  nav.horizontal li { /* makes list item float with a block display on left hand side */
+  .nav li { /* makes list item float with a block display on left hand side */
       display: block;
       float: center;
       text-align: center;
   }
 
-  nav.horizontal a {
+  .nav a {
      display: block;
      font-size: 20px;
      background-color:rgb(120, 61, 0);
@@ -59,14 +59,14 @@
      padding-top: 10px;
      padding-bottom: 15px;
      border: 1px solid black;
-     width: 107%;
+     width: 605px;
   }
 
-  nav.horizontal a:link, nav.horizontal a:visited {
+  .nav a:link, .nav a:visited {
      color: white; /* text color*/
   }
 
-  nav.horizontal a:hover, nav.horizontal a:active {
+  .nav a:hover, .nav a:active {
      background-color: rgb(110, 175, 0);  /* color shown when hovered over */
   }
   }
