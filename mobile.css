@@ -3,6 +3,7 @@
 /*Mobile style */
 @media only screen and (max-width: 480px) {
     #navicon {
+        text-align: left;
         display: block;
     }
 
@@ -22,8 +23,7 @@
     /* mobile body styles */
     body {
     background-color: rgb(213, 230, 246);
-    max-width: 480px;
-    width: 95%;         /* sets to 95% of the browser window. */
+    width: 200%;         /* sets to 95% of the browser window. */
   }
   html {
       background-color: rgb(213, 230, 246);
@@ -39,19 +39,19 @@
       width: 110%;
   }
   body > header > nav.horizontal li {
-  	width: 25%;   /* sets width of navigation list item to 20% */
+  	width: 15%;   /* sets width of navigation list item to 20% */
   }
   /*navigation list styles*/
 
   nav.horizontal li { /* makes list item float with a block display on left hand side */
       display: block;
-      float: left;
+      float: center;
       text-align: center;
   }
 
   nav.horizontal a {
      display: block;
-     font-size: 1em;
+     font-size: 20px;
      background-color:rgb(120, 61, 0);
      text-align: center;
      text-decoration: none;
@@ -59,7 +59,7 @@
      padding-top: 10px;
      padding-bottom: 15px;
      border: 1px solid black;
-     width: 100%;
+     width: 107%;
   }
 
   nav.horizontal a:link, nav.horizontal a:visited {
