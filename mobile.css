@@ -3,7 +3,6 @@
 /*Mobile style */
 @media only screen and (max-width: 480px) {
     #navicon {
-        width: 10px;
         display: block;
     }
 
