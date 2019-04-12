@@ -21,7 +21,8 @@
     background-color: rgb(213, 230, 246);
     margin-left: auto;
     margin-right: auto;
-    width: 95%;         /* sets to 95% of the browser window. */
+    width: 95%;
+    height: 100%;         /* sets to 95% of the browser window. */
   }
   html {
       background-image: url(background_all.png);
@@ -50,7 +51,7 @@
 
   .nav a {
      display: block;
-     font-size: 16px;
+     font-size: 26px;
      background-color:rgb(120, 61, 0);
      text-align: center;
      text-decoration: none;
@@ -66,59 +67,7 @@
 }
 /*id placements for home page */
 /* plan on changing divs to section id's and modify placement that way eventually */
-div#Homeh1 {
-  border-radius: 20px;
-  padding: 10px;
-  background-color:rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 200px;
-  left: 450px;
 
-}
-div#Homeh2 {
-  background-color:rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 250px;
-  left: 150px;
-}
-div#HomeP1 {
-  background-color: rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 480px;
-  left: 150px;
-}
-div#Homeh3 {
-  background-color: rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 580px;
-  left: 150px;
-}
-div#Homep2 {
-  background-color: rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 680px;
-  left: 150px;
-}
-#HomeSection3p {
-  background-color: rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 280px;
-  left: 450px;
-  width: 20%;
-}
-#HomeSection3h {
-  background-color: rgb(120, 61, 0);
-  display: block;
-  position: absolute;
-  top: 180px;
-  left: 450px;
-}
 
 /*placements for history page */
 #Historyh1 {
@@ -191,5 +140,48 @@ div#Homep2 {
   width: 100%;
 }
 .left-column {
-  width: 20%;
+  float: left;
+  padding-left: 30px;
+  width: 30%;
+  padding-top: 20px;
+}
+.right-column {
+  float: right;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+}
+.Homebottom2 {
+  margin-left: 20px;
+  margin-top: 20px;
+  float: left;
+  clear: both;
+  padding-left: 30px;
+  width: 90%;
+  padding-top: 20px;
+}
+/*element position within columns */
+.footer {
+  clear: both;
+  float: left;
+  width: 100%;
+  background-color: rgb(120, 61, 0);
+}
+.HomeLeft {
+  background-color: rgb(120, 61, 0);
+  border-radius: 20px;
+  padding: 20px;
+}
+.HomeRight1 {
+  background-color: rgb(120, 61, 0);
+  border-radius: 20px;
+  padding: 20px;
+  width: 93%;
+}
+.Homebottom2 {
+  text-align: center;
+  background-color: rgb(120, 61, 0);
+  border-radius: 20px;
+  padding: 20px;
 }
