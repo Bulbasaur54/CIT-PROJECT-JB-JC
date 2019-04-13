@@ -22,24 +22,32 @@
     }
     /* mobile body styles */
     body {
-    background-color: rgb(213, 230, 246);
-    width: 90%;         /* sets to 95% of the browser window. */
+      background-color: rgb(213, 230, 246);
+      width: 800px;
+      height: 100%;
+      margin-left: 5%;
+      margin-right: 5%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+      -flex-flow: row wrap;
   }
   html {
-      background-color: rgb(213, 230, 246);
-      height: 80%;
-      font-family: Verdana, Geneva, sans-serif;
-      font-size : 0.5em;
-      color: white;
+    background-image: url(background_all.png);
+    background-color: rgb(141,79,58);
+    min-height: 100vh;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size : 12px;
+    color: white;
   }
   /* body header styles */
 
   body > header > img {
       display: block;
-      width: 635px;
+      width: 100%;
   }
   body > header > .nav li {
-  	width: 15%;   /* sets width of navigation list item to 20% */
+  	width: 24.2%;   /* sets width of navigation list item to 20% */
   }
   /*navigation list styles*/
 
@@ -51,7 +59,7 @@
 
   .nav a {
      display: block;
-     font-size: 20px;
+     font-size: 16px;
      background-color:rgb(120, 61, 0);
      text-align: center;
      text-decoration: none;
@@ -59,7 +67,7 @@
      padding-top: 10px;
      padding-bottom: 15px;
      border: 1px solid black;
-     width: 605px;
+     width: 96%;
   }
 
   .nav a:link, .nav a:visited {
@@ -68,5 +76,59 @@
 
   .nav a:hover, .nav a:active {
      background-color: rgb(110, 175, 0);  /* color shown when hovered over */
+  }
+  .Nav {   /* sets width of nav menu for layout */
+    width: 100%;
+  }
+  .left-column {
+    float: left;
+    padding-left: 30px;
+    width: 30%;
+    padding-top: 20px;
+  }
+  .right-column {
+    float: right;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 60%;
+  }
+  .Homebottom2 {
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+    clear: both;
+    padding-left: 30px;
+    width: 93%;
+    padding-top: 20px;
+    margin-bottom: 40px;
+  }
+  /*element position within columns */
+  .footer {
+    text-align: center;
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: rgb(120, 61, 0);
+  }
+  .HomeLeft {
+    text-align: center;
+    background-color: rgb(120, 61, 0);
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .HomeRight1 {
+    text-align: center;
+    background-color: rgb(120, 61, 0);
+    border-radius: 20px;
+    padding: 20px;
+    padding-bottom: 75px;
+    width: 93%;
+  }
+  .Homebottom2 {
+    text-align: center;
+    background-color: rgb(120, 61, 0);
+    border-radius: 20px;
+    padding: 20px;
   }
   }

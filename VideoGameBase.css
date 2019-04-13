@@ -8,26 +8,28 @@
 
 */
 
-/* page body styles */
-
 /*Desktop style*/
 @media only screen and (min-width: 769px) {
     #navicon
     {
       display: none;
     }
+  }
     body {
-    padding-bottom: 600px;
     background-color: rgb(213, 230, 246);
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
-    height: 100%;         /* sets to 95% of the browser window. */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -flex-flow: row wrap;
+       /* sets to 95% of the browser window. */
   }
   html {
       background-image: url(background_all.png);
       background-color: rgb(141,79,58);
-      height: 100%;
+      min-height: 100vh;
       font-family: Verdana, Geneva, sans-serif;
       font-size : 12px;
       color: white;
@@ -64,61 +66,12 @@
   .nav a:hover, .nav a:active {
      background-color: rgb(110, 175, 0);  /* color shown when hovered over */
   }
-}
 /*id placements for home page */
 /* plan on changing divs to section id's and modify placement that way eventually */
 
 
 /*placements for history page */
-#Historyh1 {
-  padding: 10px;
-  background-color:rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 300px;
-  top: 300px;
-}
 
-#HistoryList {
-  padding: 20px;
-  padding-left: 40px;
-  background-color: rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 300px;
-  top: 300px;
-}
-#historyh2 {
-  background-color: rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 300px;
-  top: 300px;
-
-}
-#Historyp1 {
-  background-color: rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 200px;
-  top: 200px;
-}
-#Historyp2 {
-  background-color: rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 300px;
-  top: 300px;
-
-}
-#Historyp3 {
-  background-color: rgb(120, 61, 0);
-  position: absolute;
-  display: block;
-  left: 300px;
-  top: 300px;
-
-}
 /*placements for cost of gaming page */
 
 
@@ -126,15 +79,7 @@
 
 
 /*placements for Future of Gaming page */
-#FutureGaming {/* first section id placement */
-  background-color: rgb(120, 61, 0);
-  padding: 20px;
-  position: absolute;
-  display: block;
-  left: 200px;
-  top: 300px;
-  width: 40%
-}
+
 /*column width for page adjustments */
 .Nav {   /* sets width of nav menu for layout */
   width: 100%;
@@ -147,36 +92,41 @@
 }
 .right-column {
   float: right;
-  padding-right: 25px;
+  padding-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   width: 60%;
 }
 .Homebottom2 {
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 20px;
   float: left;
   clear: both;
   padding-left: 30px;
-  width: 90%;
+  width: 93%;
   padding-top: 20px;
+  margin-bottom: 40px;
 }
 /*element position within columns */
 .footer {
+  text-align: center;
   clear: both;
   float: left;
   width: 100%;
   background-color: rgb(120, 61, 0);
 }
 .HomeLeft {
+  text-align: center;
   background-color: rgb(120, 61, 0);
   border-radius: 20px;
   padding: 20px;
 }
 .HomeRight1 {
+  text-align: center;
   background-color: rgb(120, 61, 0);
   border-radius: 20px;
   padding: 20px;
+  padding-bottom: 75px;
   width: 93%;
 }
 .Homebottom2 {

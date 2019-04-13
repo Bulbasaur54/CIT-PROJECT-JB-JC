@@ -1,54 +1,27 @@
-﻿@charset "utf-8";
+﻿@charset "UTF-8";
 
 /* css sheet for images*/
 
 /*Photo placement home page*/
-div#HomeImage1 {         /* plan on changing divs to section id's and modify placement that way eventually */
-    display: block;
-	left: 100px;
-	top: 100px;
-}
-div#HomeImage2 {
-    display: block;
-	left: 300px;
-	top: 200px;
-}
+
+
+
 /*photo placement future page*/
 #GamingPC {
-    position: absolute;
-    display: block;
-	left: 600px;
-	top: 100px;
-    width: 25%;
+  width: 25%;
 }
 #arcade {
-  position: absolute;
-  display: block;
-  left: 400px;
-  top: 100px;
-  width: 15%;
+  width: 25%;
 
 }
 #nes {
-  position: absolute;
-  display: block;
-  left: 400px;
-  top: 100px;
-  width: 15%;
+  width: 25%;
 }
 #pubg {
-  position: absolute;
-  display: block;
-  left: 400px;
-  top: 100px;
-  width: 15%;
+  width: 25%;
 }
 #mariokart {
-  position: absolute;
-  display: block;
-  left: 50px;
-  top: 50px;
-  width: 56%;
+  width: 26%;
 }
 #brownbox {
   width: 100%;

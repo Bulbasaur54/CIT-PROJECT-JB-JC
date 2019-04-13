@@ -5,20 +5,18 @@
 article, aside, footer, header, nav, section{
 	display: block;
 }
-article, aside, blockquote, body, em, footer, header, html, img, li, nav, ol, section, span, ul {
-    font-size: 100%;
+article, aside, blockquote, em, body, footer, header, html, img, li, nav, ol, section, span, ul {
     margin: 0;
     padding: 0;
-    vertical-align: baseline;
+    vertical-align: baseline; 
 }
 h1, h2, h3, h4, h5 {
 	margin: 0;
-	padding-bottom: 15px;
-	padding-top: 15px;
 	vertical-align: middle;
 	text-align: center;
 	font-size: 26px;
 }
 p {
 	font-size: 16px;
+	padding-bottom: 10px;
 }
