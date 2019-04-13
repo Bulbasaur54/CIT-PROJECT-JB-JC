@@ -8,21 +8,29 @@
 
 /*photo placement future page*/
 #GamingPC {
-  width: 25%;
+  padding: 20px;
+  width: 65%;
 }
 #arcade {
-  width: 25%;
+  padding: 20px;
+  width: 75%;
 
 }
 #nes {
-  width: 25%;
+  width: 75%;
 }
 #pubg {
-  width: 25%;
+  padding: 20px;
+  width: 55%;
 }
 #mariokart {
-  width: 26%;
+  padding: 20px;
+  width: 56%;
 }
 #brownbox {
   width: 100%;
+}
+#ps4Pro {
+  width: 50%;
+  padding: 20px;
 }
