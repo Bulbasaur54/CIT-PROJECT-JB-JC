@@ -33,41 +33,37 @@
       -flex-flow: row wrap;
   }
   html {
-    background-image: url(background_all.png);
-    background-color: rgb(141,79,58);
+    background-color: rgb(246, 180, 102);
     min-height: 100vh;
     font-family: Verdana, Geneva, sans-serif;
     font-size : 12px;
     color: white;
   }
-  /* body header styles */
-
   body > header > img {
+      height: 19%;
       display: block;
       width: 100%;
   }
   body > header > .nav li {
-  	width: 24.2%;   /* sets width of navigation list item to 20% */
+  	width: 25%;                /* sets width of navigation list item to 20% */
   }
   /*navigation list styles*/
 
   .nav li { /* makes list item float with a block display on left hand side */
       display: block;
-      float: center;
+      float: left;
       text-align: center;
   }
 
   .nav a {
      display: block;
-     font-size: 16px;
-     background-color:rgb(120, 61, 0);
+     font-size: 26px;
+     background-color:rgb(186, 97, 17);
      text-align: center;
      text-decoration: none;
-     padding-right: 30px;
-     padding-top: 10px;
-     padding-bottom: 15px;
-     border: 1px solid black;
-     width: 96%;
+     border-style: double;
+     border-color: white;
+     border-width: thick;
   }
 
   .nav a:link, .nav a:visited {
@@ -75,60 +71,106 @@
   }
 
   .nav a:hover, .nav a:active {
-     background-color: rgb(110, 175, 0);  /* color shown when hovered over */
+     background-color: #51a595;  /* color shown when hovered over */
   }
-  .Nav {   /* sets width of nav menu for layout */
-    width: 100%;
-  }
-  .left-column {
-    float: left;
-    padding-left: 30px;
-    width: 30%;
-    padding-top: 20px;
-  }
-  .right-column {
-    float: right;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 60%;
-  }
-  .Homebottom2 {
-    margin-left: 30px;
-    margin-top: 20px;
-    float: left;
-    clear: both;
-    padding-left: 30px;
-    width: 93%;
-    padding-top: 20px;
-    margin-bottom: 40px;
-  }
-  /*element position within columns */
-  .footer {
-    text-align: center;
-    clear: both;
-    float: left;
-    width: 100%;
-    background-color: rgb(120, 61, 0);
-  }
-  .HomeLeft {
-    text-align: center;
-    background-color: rgb(120, 61, 0);
-    border-radius: 20px;
-    padding: 20px;
-  }
-  .HomeRight1 {
-    text-align: center;
-    background-color: rgb(120, 61, 0);
-    border-radius: 20px;
-    padding: 20px;
-    padding-bottom: 75px;
-    width: 93%;
-  }
-  .Homebottom2 {
-    text-align: center;
-    background-color: rgb(120, 61, 0);
-    border-radius: 20px;
-    padding: 20px;
-  }
+/*id placements for home page */
+/* plan on changing divs to section id's and modify placement that way eventually */
+
+
+/*placements for history page */
+
+/*placements for cost of gaming page */
+
+
+
+
+
+/*placements for Future of Gaming page */
+
+/*column width for page adjustments */
+.nav {   /* sets width of nav menu for layout */
+  width: 100%;
+}
+.left-column {
+  float: left;
+  padding-left: 30px;
+  width: 32%;
+  padding-top: 20px;
+}
+.right-column {
+  float: right;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 60%;
+}
+.Homebottom2 {
+  margin-left: 30px;
+  margin-top: 20px;
+  float: left;
+  clear: both;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 91%;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+/*element position within columns */
+.footer {
+  text-align: center;
+  clear: both;
+  float: left;
+  margin-top: 5%;
+  width: 100%;
+  background-color: rgb(186, 97, 17);
+
+}
+.HomeLeft {
+  text-align: center;
+  background-color: rgb(186, 97, 17);
+  padding: 5%;
+  padding-bottom: 7%;
+  border-style: double;
+  border-color: white;
+  border-width: thick;
+  height: 100%;
+}
+.HomeRight1 {
+  font-size: 16px;
+  text-align: center;
+  background-color: rgb(186, 97, 17);
+  padding: 20px;
+  padding-bottom: 75px;
+  width: 93%;
+  border-style: double;
+  border-color: white;
+  border-width: thick;
+}
+.Homebottom2 {
+  text-align: center;
+  background-color: rgb(186, 97, 17);
+  padding: 2%;
+  border-style: double;
+  border-color: white;
+  border-width: thick;
+}
+.CostTable {
+  float: left;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 95%;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+.CostPage {
+  text-align: center;
+  background-color: rgb(186, 97, 17);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/* Table style */
+.ConsoleTable {
+}
+
   }
