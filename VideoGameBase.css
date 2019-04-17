@@ -14,7 +14,14 @@
     {
       display: none;
     }
+
+ @font-face {
+font-family: snesFont;
+src: url(SNES_Italic.ttf);
+}
     body {
+    /*text-shadow: 2px 2px #2C9CDB;*/
+    font-family: snesFont;
     border-color: white;
     border-width: thick;
     border-style: double;
@@ -98,10 +105,12 @@
 .right-column {
   padding-top: 20px;
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 8%;
+  padding-bottom: 25px;
   float: right;
   height: 100px;
-  width: 80ch;
+  width: 180ch;
 }
 .Homebottom1 {
   margin-left: 30px;
@@ -147,13 +156,14 @@
   height: 100%;
 }
 .GameList {
+  font-size: 22px;
   text-align: left;
   background-color: rgb(186, 97, 17);
   padding-left: 9%;
   padding-top: 5%;
   padding-bottom:3%;
   padding-right: 9%;
-  max-width: 25ch;
+  max-width: 55ch;
   margin-left: 13%;
   border-style: double;
   border-color: white;
@@ -167,8 +177,8 @@
   text-align: center;
   background-color: rgb(186, 97, 17);
   padding: 20px;
-  padding-bottom: 75px;
   width: 93%;
+  margin-bottom: 20px;
   border-style: double;
   border-color: white;
   border-width: thick;
@@ -223,11 +233,12 @@
   text-decoration: none;
   font: white;
   float: left;
-  width: 50ch;
+  text-align: center;
+  width: 100%;
 }
 .left-Footer {
   text-decoration: none;
-  font: white;
+  font-color: white;
   float: right;
   width: 50ch;
 }
@@ -235,8 +246,7 @@
   width: 15%;
 
 }
-}
-
+/* mouse cursor */
 div, a, li, body, html, header, footer, iframe {
     cursor:url(Nintendo_64.png),auto;
 }
@@ -256,41 +266,62 @@ form {
   background-color: rgb(186, 97, 17);
   width: 25%;
 }
-input, textarea {
+input {
   font-size: 16px;
   text-align: left;
   float: left;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 90%;
+  height: 100%;
+
 }
 textarea {
-  vertical-align: top;
+  font-size: 16px;
+  text-align: left;
+  float: left;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 90%;
+  height: 150px;
 }
 label {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  font-size: 30px;
   display: inline-block;
   text-align: left;
 }
+#messagebox {
+  height: 200px;
+}
  #FormButton
-{
-   padding-top: 25px;
-   padding-bottom: 25px;
-   margin-left: 25%;
-   margin-top: 12%;
+ {
+   padding-top: 95px;
+   margin-left: 134px;
+   margin-top: 90px;
  }
 /* Table style */
 .ConsoleTable {
-  margin-left: 20%;
+  margin-top: 3%;
+  margin-bottom: 20%;
+  margin-left: 22%;
   margin-right: 20%;
 }
 
 .ConsoleTable, th, td, tr {
+  font-size: 32px;
   border-style: double;
   border-width: medium;
   border-color: white;
   background-color: #2C9CDB;
+  width: 55%;
 }
-
+th, td, tr {
+  padding: 20px;
+}
+}
 /*Mobile style */
 @media only screen and (max-width: 480px) {
     #navicon {
@@ -298,168 +329,309 @@ label {
         display: block;
     }
 
-    .nav ul {           /* displays nav icon as block type only on mobile devices and only appears on mobile devices as well */
-        display: none;          /* hides contents of nav list when nav icon is dipslayed*/
-    }
+    @font-face {
+   font-family: snesFont;
+   src: url(SNES_Italic.ttf);
+   }
+       body {
+       /*text-shadow: 2px 2px #2C9CDB;*/
+       font-family: snesFont;
+       border-color: white;
+       border-width: thick;
+       border-style: double;
+       background-color: rgb(248, 224, 176);
+       width: 85%;
+       margin-left: auto;
+       margin-right: auto;
+       display: flex;
+       flex-flow: column;
+          /* sets to 95% of the browser window. */
+     }
+     html {
+         background-image: url(bk1.png);
+         min-height: 100vh;
+         font-family: Verdana, Geneva, sans-serif;
+         font-size : 12px;
+         color: white;
+     }
+     /* body header styles */
 
-    #navicon:hover+ul, .nav ul:hover {
+     body > header > img {
+         height: 200px;
+         display: block;
+         width: 500px;
+     }
+     body > header > .nav li {
+       width: 25%;                /* sets width of navigation list item to 20% */
+     }
+     /*navigation list styles*/
+
+     .nav li { /* makes list item float with a block display on left hand side */
+         display: block;
+         float: left;
+         text-align: center;
+     }
+
+     .nav a {
         display: block;
-    }
-        .nav ul li {
-            display: block;/* sets submenus to be hidden until below enables it to function by being hovered over */
-        }
-    .nav:hover + ul li {
-        display: block;
-    }
-    /* mobile body styles */
-    body {
-      background-color: rgb(213, 230, 246);
-      width: 800px;
-      height: 100%;
-      margin-left: 5%;
-      margin-right: 5%;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row wrap;
-      -flex-flow: row wrap;
-  }
-  html {
-    background-color: rgb(246, 180, 102);
-    min-height: 100vh;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size : 12px;
-    color: white;
-  }
-  body > header > img {
-      height: 19%;
-      display: block;
-      width: 100%;
-  }
-  body > header > .nav li {
-  	width: 25%;                /* sets width of navigation list item to 20% */
-  }
-  /*navigation list styles*/
+        font-size: 26px;
+        background-color:rgb(186, 97, 17);
+        text-align: center;
+        text-decoration: none;
+        border-style: double;
+        border-color: white;
+        border-width: thick;
+     }
 
-  .nav li { /* makes list item float with a block display on left hand side */
-      display: block;
-      float: left;
-      text-align: center;
-  }
+     .nav a:link, .nav a:visited {
+        color: white; /* text color*/
+     }
 
-  .nav a {
-     display: block;
-     font-size: 26px;
-     background-color:rgb(186, 97, 17);
+     .nav a:hover, .nav a:active {
+        background-color: rgb(130, 208, 18);  /* color shown when hovered over */
+     }
+   /*id placements for home page */
+   /* plan on changing divs to section id's and modify placement that way eventually */
+
+
+   /*placements for history page */
+
+   /*placements for cost of gaming page */
+
+
+
+
+
+   /*placements for Future of Gaming page */
+
+   /*column width for page adjustments */
+   .nav {   /* sets width of nav menu for layout */
+     width: 100%;
+   }
+   .left-column {
+     margin-top: 20px;
+     float: left;
+     padding-left: 30px;
+     width: 32%;
+     padding-top: 20px;
+
+   }
+   .right-column {
+     padding-top: 20px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     margin-right: 8%;
+     padding-bottom: 25px;
+     float: right;
+     height: 100px;
+     width: 180ch;
+   }
+   .Homebottom1 {
+     margin-left: 30px;
+     margin-top: 20px;
+     float: left;
+     clear: both;
+     padding-left: 30px;
+     padding-right: 30px;
+     width: 91%;
+     padding-top: 20px;
+     margin-bottom: 40px;
+   }
+   .HistoryBottom
+   {
      text-align: center;
-     text-decoration: none;
+     background-color: rgb(186, 97, 17);
+     padding: 2%;
+     width: 90%;
      border-style: double;
      border-color: white;
      border-width: thick;
-  }
+     margin-left: 2%;
+   }
+   /*element position within columns */
+   .footer {
+     text-decoration: none;
+     text-align: center;
+     clear: both;
+     float: left;
+     margin-top: 5%;
+     width: 100%;
+     background-color: rgb(186, 97, 17);
 
-  .nav a:link, .nav a:visited {
-     color: white; /* text color*/
-  }
+   }
+   .HomeLeft {
+     text-align: center;
+     background-color: rgb(186, 97, 17);
+     padding: 5%;
+     padding-bottom: 7%;
+     border-style: double;
+     border-color: white;
+     border-width: thick;
+     height: 100%;
+   }
+   .GameList {
+     font-size: 22px;
+     text-align: left;
+     background-color: rgb(186, 97, 17);
+     padding-left: 9%;
+     padding-top: 5%;
+     padding-bottom:3%;
+     padding-right: 9%;
+     max-width: 55ch;
+     margin-left: 13%;
+     border-style: double;
+     border-color: white;
+     border-width: thick;
+     height: 100%;
+     margin-bottom: 15%;
 
-  .nav a:hover, .nav a:active {
-     background-color: #51a595;  /* color shown when hovered over */
-  }
-/*id placements for home page */
-/* plan on changing divs to section id's and modify placement that way eventually */
+   }
+   .HomeRight1 {
+     font-size: 16px;
+     text-align: center;
+     background-color: rgb(186, 97, 17);
+     padding: 20px;
+     width: 93%;
+     margin-bottom: 20px;
+     border-style: double;
+     border-color: white;
+     border-width: thick;
+   }
+   .Homebottom2 {
+     text-align: center;
+     background-color: rgb(186, 97, 17);
+     padding: 2%;
+     border-style: double;
+     border-color: white;
+     border-width: thick;
+   }
+   .CostTable {
+     float: left;
+     margin-left: 25px;
+     margin-right: 25px;
+     width: 95%;
+     padding-top: 20px;
+     margin-bottom: 40px;
+   }
+   .CostPage {
+     text-align: center;
+     background-color: rgb(186, 97, 17);
+     border-radius: 20px;
+     padding: 20px;
+   }
+
+   .picture-Footer{
+     text-decoration: none;
+     font: white;
+     float: right;
+     width: 50%;
+     height: 50%;
+
+   }
+
+   .left-Footer a:link, .left-Footer a:visited {
+     text-align: center;
+      text-decoration: none;
+      color: white; /* text color*/
+   }
+   .button
+   {
+     text-decoration: none;
+     font: white;
+     text-align: center;
+     padding: 2%;
+     width: 40ch;
+
+   }
+   .right-Footer {
+     text-decoration: none;
+     font: white;
+     float: left;
+     text-align: center;
+     width: 100%;
+   }
+   .left-Footer {
+     text-decoration: none;
+     font: white;
+     float: right;
+     width: 50ch;
+   }
+   #picture-Footer {
+     width: 15%;
+
+   }
+   div, a, li, body, html, header, footer, iframe {
+       cursor:url(Nintendo_64.png),auto;
+   }
 
 
-/*placements for history page */
+   /* form box style */
 
-/*placements for cost of gaming page */
+   form {
+     font-size: 16px;
+     margin-top: 100px;
+     margin-bottom: 100px;
+     margin-left: 35%;
+     padding: 25px;
+     border-style: double;
+     border-width: thick;
+     border-color: white;
+     background-color: rgb(186, 97, 17);
+     width: 25%;
+   }
+   input {
+     font-size: 16px;
+     text-align: left;
+     float: left;
+     margin-left: 2%;
+     margin-right: 2%;
+     width: 90%;
+     height: 100%;
 
+   }
+   textarea {
+     font-size: 16px;
+     text-align: left;
+     float: left;
+     margin-left: 2%;
+     margin-right: 2%;
+     width: 90%;
+     height: 150px;
+   }
+   label {
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-left: 8px;
+     font-size: 30px;
+     display: inline-block;
+     text-align: left;
+   }
+   #messagebox {
+     height: 200px;
+   }
+    #FormButton
+    {
+      padding-top: 95px;
+      margin-left: 134px;
+      margin-top: 90px;
+    }
+   /* Table style */
+   .ConsoleTable {
+     margin-top: 3%;
+     margin-bottom: 20%;
+     margin-left: 22%;
+     margin-right: 20%;
+   }
 
-
-
-
-/*placements for Future of Gaming page */
-
-/*column width for page adjustments */
-.nav {   /* sets width of nav menu for layout */
-  width: 100%;
-}
-.left-column {
-  float: left;
-  padding-left: 30px;
-  width: 32%;
-  padding-top: 20px;
-}
-.right-column {
-  float: right;
-  padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 70%;
-}
-.Homebottom1 {
-  margin-left: 30px;
-  margin-top: 20px;
-  float: left;
-  clear: both;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 91%;
-  padding-top: 20px;
-  margin-bottom: 40px;
-}
-/*element position within columns */
-.footer {
-  text-align: center;
-  clear: both;
-  float: left;
-  width: 100%;
-  background-color: rgb(186, 97, 17);
-
-}
-.HomeLeft {
-  text-align: center;
-  background-color: rgb(186, 97, 17);
-  padding: 5%;
-  padding-bottom: 7%;
-  border-style: double;
-  border-color: white;
-  border-width: thick;
-  height: 100%;
-}
-.HomeRight1 {
-  font-size: 16px;
-  text-align: center;
-  background-color: rgb(186, 97, 17);
-  padding: 5%;
-  width: 93%;
-  border-style: double;
-  border-color: white;
-  border-width: thick;
-}
-.Homebottom2 {
-  text-align: center;
-  background-color: rgb(186, 97, 17);
-  padding: 2%;
-  border-style: double;
-  border-color: white;
-  border-width: thick;
-}
-.CostTable {
-  float: left;
-  margin-left: 25px;
-  margin-right: 25px;
-  width: 95%;
-  padding-top: 20px;
-  margin-bottom: 40px;
-}
-.CostPage {
-  text-align: center;
-  background-color: rgb(186, 97, 17);
-  border-radius: 20px;
-  padding: 20px;
-}
-
-/* Table style */
-.ConsoleTable {
-}
-
+   .ConsoleTable, th, td, tr {
+     font-size: 32px;
+     border-style: double;
+     border-width: medium;
+     border-color: white;
+     background-color: #2C9CDB;
+     width: 55%;
+   }
+   th, td, tr {
+     padding: 20px;
+   }
   }
