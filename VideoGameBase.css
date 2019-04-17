@@ -107,10 +107,9 @@ src: url(SNES_Italic.ttf);
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 8%;
-  padding-bottom: 25px;
   float: right;
   height: 100px;
-  width: 180ch;
+  width: 170ch;
 }
 .Homebottom1 {
   margin-left: 30px;
@@ -178,7 +177,8 @@ src: url(SNES_Italic.ttf);
   background-color: rgb(186, 97, 17);
   padding: 20px;
   width: 93%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  padding-bottom: 100px;
   border-style: double;
   border-color: white;
   border-width: thick;
