@@ -11,12 +11,13 @@ article, aside, blockquote, em, body, footer, header, html, img, li, nav, ol, se
     vertical-align: baseline;
 }
 h1, h2, h3, h4, h5 {
+  text-decoration: underline;
 	margin: 0;
 	vertical-align: middle;
 	text-align: center;
 	font-size: 26px;
 }
 p {
+	text-decoration: none;
 	font-size: 16px;
-	padding-bottom: 10px;
 }
