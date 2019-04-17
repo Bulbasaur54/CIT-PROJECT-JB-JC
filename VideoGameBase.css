@@ -340,9 +340,9 @@ th, td, tr {
        border-width: thick;
        border-style: double;
        background-color: rgb(248, 224, 176);
-       width: 85%;
-       margin-left: auto;
-       margin-right: auto;
+       width: 800px;
+       margin-left: 30px;
+       margin-right: 25px;;
        display: flex;
        flex-flow: column;
           /* sets to 95% of the browser window. */
@@ -359,7 +359,7 @@ th, td, tr {
      body > header > img {
          height: 200px;
          display: block;
-         width: 500px;
+         width: 800px;
      }
      body > header > .nav li {
        width: 25%;                /* sets width of navigation list item to 20% */
@@ -412,20 +412,22 @@ th, td, tr {
      margin-top: 20px;
      float: left;
      padding-left: 30px;
-     width: 32%;
+     width: 82%;
      padding-top: 20px;
 
    }
    .right-column {
-     padding-top: 20px;
+     margin-left: 30px;
      margin-top: 20px;
-     margin-bottom: 20px;
-     margin-right: 8%;
-     padding-bottom: 25px;
-     float: right;
-     height: 100px;
-     width: 180ch;
+     float: left;
+     clear: both;
+     padding-left: 40px;
+     padding-right: 30px;
+     width: 87%;
+     padding-top: 20px;
+     margin-bottom: 40px;
    }
+
    .Homebottom1 {
      margin-left: 30px;
      margin-top: 20px;
@@ -470,15 +472,15 @@ th, td, tr {
      height: 100%;
    }
    .GameList {
-     font-size: 22px;
+     font-size: 32px;
      text-align: left;
      background-color: rgb(186, 97, 17);
-     padding-left: 9%;
+     padding-left: 15%;
      padding-top: 5%;
      padding-bottom:3%;
-     padding-right: 9%;
-     max-width: 55ch;
-     margin-left: 13%;
+     padding-right: 15%;
+     max-width: 800px;
+     margin-left: 7%;
      border-style: double;
      border-color: white;
      border-width: thick;
@@ -487,15 +489,13 @@ th, td, tr {
 
    }
    .HomeRight1 {
-     font-size: 16px;
      text-align: center;
      background-color: rgb(186, 97, 17);
-     padding: 20px;
-     width: 93%;
-     margin-bottom: 20px;
+     padding: 2%;
      border-style: double;
      border-color: white;
      border-width: thick;
+
    }
    .Homebottom2 {
      text-align: center;
@@ -634,4 +634,4 @@ th, td, tr {
    th, td, tr {
      padding: 20px;
    }
-  }
+ }
