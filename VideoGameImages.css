@@ -44,6 +44,12 @@
   box-shadow: 0px 0px 15px 15px white;
   width: 55%;
 }
+#nintendo64 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 0px 0px 15px 15px white;
+
+}
 #ps4Pro {
   margin-top: 2%;
   margin-bottom: 5%;
